@@ -1,6 +1,6 @@
 import fetchNews from "../../../lib/fetchNews"
 import NewsList from "../../NewsList"
-import { categories } from "../../../constant"
+// import { categories } from "../../../constant"
 
 type Props = {
     params : {category: Category}
@@ -18,8 +18,8 @@ const NewsCategory = async ({params: {category}}: Props) => {
 
 export default NewsCategory
 
-export async function generateStaticParams() {
-    return categories.map((category) => ({
-        category: category
-    }))
-}
+// export async function generateStaticParams() {
+//     return categories.map((category) => ({
+//         category: category
+//     }))
+// }
