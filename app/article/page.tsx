@@ -43,3 +43,11 @@ const ArticlePage = ({ searchParams }: Props) => {
 };
 
 export default ArticlePage;
+
+export async function getStaticPaths(context: { query: any; }) {
+  const {query} = context
+  return {
+    props: query,
+    fallback: true
+  }
+}
